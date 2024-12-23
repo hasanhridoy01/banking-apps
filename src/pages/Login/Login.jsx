@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="py-4 px-16 mx-auto w-full border-b border-regular">
+      <div className="py-4 px-20 mx-auto w-full border-b border-regular">
         <img src={logo} alt="logo" />
       </div>
 
@@ -154,7 +154,7 @@ const Login = () => {
         <div className="py-3">
           <a
             href=""
-            className="text-primary-regular text-[16px] font-inter leading-[26px] underline font-semiBold"
+            className="text-primary-regular text-[16px] font-inter leading-[26px] underline text-[500]"
           >
             Trouble logging in?
           </a>
