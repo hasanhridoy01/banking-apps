@@ -22,7 +22,7 @@ const Login = () => {
         </h1>
         <h4 className="text-center text-[16px] font-poppins leading-[24px] py-3">
           New to banking?{" "}
-          <a href="#" className="text-primary-regular underline text-[500]">
+          <a href="#" className="text-primary-regular underline font-semiBold">
             Sign up
           </a>
         </h4>
@@ -154,7 +154,7 @@ const Login = () => {
         <div className="py-3">
           <a
             href=""
-            className="text-primary-regular text-[16px] font-inter leading-[26px] underline text-[500]"
+            className="text-primary-regular text-[16px] font-inter leading-[26px] underline font-semiBold"
           >
             Trouble logging in?
           </a>

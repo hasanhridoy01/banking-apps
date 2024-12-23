@@ -7,10 +7,14 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      fontWeight: {
+        semiBold: "500",
+        bold: "600",
+      },
       colors: {
         primary: {
           regular: "#1C3B7D",
-          dark: "#253577",
+          dark: "#f6f6f6",
           darker: "#010E35",
           lightest: "#E6EDF7",
           lighter: "#D2DEE5",
@@ -89,26 +93,6 @@ export default {
         },
         border: {
           regular: "#E5E5E5",
-        },
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: "#1F2937",
-            h1: { color: "#1E3A8A" },
-            h2: { color: "#1E3A8A" },
-            h3: { color: "#1E3A8A" },
-            a: { color: "#10B981", "&:hover": { color: "#059669" } },
-          },
-        },
-        dark: {
-          css: {
-            color: "#D1D5DB",
-            h1: { color: "#FFFFFF" },
-            h2: { color: "#FFFFFF" },
-            h3: { color: "#FFFFFF" },
-            a: { color: "#F59E0B", "&:hover": { color: "#D97706" } },
-          },
         },
       },
     },
