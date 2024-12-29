@@ -1,7 +1,14 @@
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../../components/ui/tabs";
+
 const Home = () => {
   return (
     <div>
-      <div className="bg-white p-6">
+      <div className="bg-white py-10">
         {/* Header */}
         <div className="flex justify-start items-center mb-6 gap-3">
           <svg
@@ -12,40 +19,40 @@ const Home = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
-              x="0.40625"
-              y="0.495117"
+              x="0.5"
+              y="0.5"
               width="66"
               height="64"
               rx="32"
-              fill="#97E866"
+              fill="#D3DFFA"
             />
             <path
-              d="M39.6562 43.1201H27.1562C23.4062 43.1201 20.9062 41.2451 20.9062 36.8701V28.1201C20.9062 23.7451 23.4062 21.8701 27.1562 21.8701H39.6562C43.4062 21.8701 45.9062 23.7451 45.9062 28.1201V36.8701C45.9062 41.2451 43.4062 43.1201 39.6562 43.1201Z"
-              stroke="#222222"
+              d="M39.75 43.125H27.25C23.5 43.125 21 41.25 21 36.875V28.125C21 23.75 23.5 21.875 27.25 21.875H39.75C43.5 21.875 46 23.75 46 28.125V36.875C46 41.25 43.5 43.125 39.75 43.125Z"
+              stroke="#1C3B7D"
               stroke-width="2"
               stroke-miterlimit="10"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
-              d="M33.4062 36.2451C35.4773 36.2451 37.1562 34.5662 37.1562 32.4951C37.1562 30.424 35.4773 28.7451 33.4062 28.7451C31.3352 28.7451 29.6562 30.424 29.6562 32.4951C29.6562 34.5662 31.3352 36.2451 33.4062 36.2451Z"
-              stroke="#222222"
+              d="M33.5 36.25C35.5711 36.25 37.25 34.5711 37.25 32.5C37.25 30.4289 35.5711 28.75 33.5 28.75C31.4289 28.75 29.75 30.4289 29.75 32.5C29.75 34.5711 31.4289 36.25 33.5 36.25Z"
+              stroke="#1C3B7D"
               stroke-width="2"
               stroke-miterlimit="10"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
-              d="M25.2812 29.3701V35.6201"
-              stroke="#222222"
+              d="M25.375 29.375V35.625"
+              stroke="#1C3B7D"
               stroke-width="2"
               stroke-miterlimit="10"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
             <path
-              d="M41.5312 29.3701V35.6201"
-              stroke="#222222"
+              d="M41.625 29.375V35.625"
+              stroke="#1C3B7D"
               stroke-width="2"
               stroke-miterlimit="10"
               stroke-linecap="round"
@@ -54,8 +61,10 @@ const Home = () => {
           </svg>
 
           <div className="">
-            <div className="font-inter text-[16px] leading-[24px] font-bold">Main Group</div>
-            <div className="font-inter text-[32px] leading-[22px] text-[#555555] font-[700] flex items-center gap-2">
+            <div className="font-inter text-[16px] leading-[24px] font-bold mb-1">
+              Main Group
+            </div>
+            <div className="font-inter text-[32px] leading-[22px] text-[#555555] font-[700] flex items-center gap-3">
               7.86 GBP{" "}
               <svg
                 width="33"
@@ -86,29 +95,123 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Actions */}
-        <div className="flex space-x-4 mb-6">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-md">
-            Send
-          </button>
-          <button className="px-4 py-2 bg-gray-100 rounded-md">
-            Add Money
-          </button>
-          <button className="px-4 py-2 bg-gray-100 rounded-md">Request</button>
-        </div>
-
-        {/* Currency Cards */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          {["USD", "CAD", "GBP", "WON"].map((currency, index) => (
-            <div key={index} className="p-4 bg-gray-100 rounded-md shadow-sm">
-              <div className="flex items-center space-x-2 mb-2">
-                <span className="text-xl font-semibold">{currency}</span>
+        <Tabs defaultValue="send" className="mb-5">
+          <TabsList className="grid grid-cols-3 items-center w-[400px] mb-3">
+            <TabsTrigger value="send">Send</TabsTrigger>
+            <TabsTrigger value="add-money">Add Money</TabsTrigger>
+            <TabsTrigger value="request">Request</TabsTrigger>
+          </TabsList>
+          <TabsContent value="send">
+            <div className="grid grid-cols-5 gap-4">
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
               </div>
-              <div className="text-gray-500">..56434</div>
-              <div className="text-lg font-bold">0.00</div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
             </div>
-          ))}
-        </div>
+          </TabsContent>
+          <TabsContent value="add-money">
+            <div className="grid grid-cols-5 gap-4">
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+          <TabsContent value="request">
+            <div className="grid grid-cols-5 gap-4">
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+              <div className="bg-surface-body rounded-lg p-5">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  at et alias aliquam exercitationem similique vero inventore
+                  saepe ipsam officiis.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+        </Tabs>
 
         {/* Transactions */}
         <div>
