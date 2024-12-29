@@ -9,18 +9,18 @@ export const route = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
+      { 
         path: "/",
         element: <Home />,
       },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "accoutType",
-        element: <AccountType />,
-      },
     ],
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "accoutType",
+    element: <AccountType />,
   },
 ]);
