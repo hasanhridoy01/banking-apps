@@ -4,6 +4,10 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
+import country1 from "../../assets/images/home/Country1.png";
+import country2 from "../../assets/images/home/Country2.png";
+import country3 from "../../assets/images/home/Country3.png";
+import country4 from "../../assets/images/home/Country4.png";
 
 const Home = () => {
   return (
@@ -102,34 +106,389 @@ const Home = () => {
             <TabsTrigger value="request">Request</TabsTrigger>
           </TabsList>
           <TabsContent value="send">
-            <div className="grid grid-cols-5 gap-4">
-              <div className="bg-surface-body rounded-lg p-5">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  at et alias aliquam exercitationem similique vero inventore
-                  saepe ipsam officiis.
-                </p>
+            <div className="grid grid-cols-4 gap-4">
+              <div className="bg-surface-body rounded-lg p-5 relative cursor-pointer">
+                <img className="absolute left-0 top-0" src={country1} alt="" />
+                <h4 className="float-right font-inter text-[24px] leading-[24px] font-semiBold">
+                  USD
+                </h4>
+                <div className="mt-14 ml-0">
+                  <h4 className="font-inter text-[32px] leading-[38px] mb-1 font-bold">
+                    4268.96
+                  </h4>
+
+                  <h4 className="flex gap-1 font-inter text-[16px] leading-[24px] font-bold text-[#555555]">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.8057 2.29219L18.3057 5.29217C18.5974 5.40883 18.8307 5.75883 18.8307 6.06716V8.83383C18.8307 9.29217 18.4557 9.66717 17.9974 9.66717H2.9974C2.53906 9.66717 2.16406 9.29217 2.16406 8.83383V6.06716C2.16406 5.75883 2.3974 5.40883 2.68907 5.29217L10.1891 2.29219C10.3557 2.22552 10.6391 2.22552 10.8057 2.29219Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.8307 18.8333H2.16406V16.3333C2.16406 15.875 2.53906 15.5 2.9974 15.5H17.9974C18.4557 15.5 18.8307 15.875 18.8307 16.3333V18.8333Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.83594 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.16406 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.8359 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.1641 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.33594 18.8359H19.6693"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 7.58594C11.1904 7.58594 11.75 7.02629 11.75 6.33594C11.75 5.64558 11.1904 5.08594 10.5 5.08594C9.80964 5.08594 9.25 5.64558 9.25 6.33594C9.25 7.02629 9.80964 7.58594 10.5 7.58594Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>{" "}
+                    ..5634
+                  </h4>
+                </div>
               </div>
-              <div className="bg-surface-body rounded-lg p-5">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  at et alias aliquam exercitationem similique vero inventore
-                  saepe ipsam officiis.
-                </p>
+
+              <div className="bg-surface-body rounded-lg p-5 relative cursor-pointer">
+                <img className="absolute left-0 top-0" src={country2} alt="" />
+                <h4 className="float-right font-inter text-[24px] leading-[24px] font-semiBold">
+                  CAD
+                </h4>
+                <div className="mt-14 ml-0">
+                  <h4 className="font-inter text-[32px] leading-[38px] mb-1 font-bold">
+                    4268.96
+                  </h4>
+
+                  <h4 className="flex gap-1 font-inter text-[16px] leading-[24px] font-bold text-[#555555]">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.8057 2.29219L18.3057 5.29217C18.5974 5.40883 18.8307 5.75883 18.8307 6.06716V8.83383C18.8307 9.29217 18.4557 9.66717 17.9974 9.66717H2.9974C2.53906 9.66717 2.16406 9.29217 2.16406 8.83383V6.06716C2.16406 5.75883 2.3974 5.40883 2.68907 5.29217L10.1891 2.29219C10.3557 2.22552 10.6391 2.22552 10.8057 2.29219Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.8307 18.8333H2.16406V16.3333C2.16406 15.875 2.53906 15.5 2.9974 15.5H17.9974C18.4557 15.5 18.8307 15.875 18.8307 16.3333V18.8333Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.83594 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.16406 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.8359 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.1641 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.33594 18.8359H19.6693"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 7.58594C11.1904 7.58594 11.75 7.02629 11.75 6.33594C11.75 5.64558 11.1904 5.08594 10.5 5.08594C9.80964 5.08594 9.25 5.64558 9.25 6.33594C9.25 7.02629 9.80964 7.58594 10.5 7.58594Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>{" "}
+                    ..5634
+                  </h4>
+                </div>
               </div>
-              <div className="bg-surface-body rounded-lg p-5">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  at et alias aliquam exercitationem similique vero inventore
-                  saepe ipsam officiis.
-                </p>
+
+              <div className="bg-surface-body rounded-lg p-5 relative cursor-pointer">
+                <img className="absolute left-0 top-0" src={country3} alt="" />
+                <h4 className="float-right font-inter text-[24px] leading-[24px] font-semiBold">
+                  GBP
+                </h4>
+                <div className="mt-14 ml-0">
+                  <h4 className="font-inter text-[32px] leading-[38px] mb-1 font-bold">
+                    4268.96
+                  </h4>
+
+                  <h4 className="flex gap-1 font-inter text-[16px] leading-[24px] font-bold text-[#555555]">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.8057 2.29219L18.3057 5.29217C18.5974 5.40883 18.8307 5.75883 18.8307 6.06716V8.83383C18.8307 9.29217 18.4557 9.66717 17.9974 9.66717H2.9974C2.53906 9.66717 2.16406 9.29217 2.16406 8.83383V6.06716C2.16406 5.75883 2.3974 5.40883 2.68907 5.29217L10.1891 2.29219C10.3557 2.22552 10.6391 2.22552 10.8057 2.29219Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.8307 18.8333H2.16406V16.3333C2.16406 15.875 2.53906 15.5 2.9974 15.5H17.9974C18.4557 15.5 18.8307 15.875 18.8307 16.3333V18.8333Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.83594 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.16406 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.8359 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.1641 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.33594 18.8359H19.6693"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 7.58594C11.1904 7.58594 11.75 7.02629 11.75 6.33594C11.75 5.64558 11.1904 5.08594 10.5 5.08594C9.80964 5.08594 9.25 5.64558 9.25 6.33594C9.25 7.02629 9.80964 7.58594 10.5 7.58594Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>{" "}
+                    ..5634
+                  </h4>
+                </div>
               </div>
-              <div className="bg-surface-body rounded-lg p-5">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                  at et alias aliquam exercitationem similique vero inventore
-                  saepe ipsam officiis.
-                </p>
+
+              <div className="bg-surface-body rounded-lg p-5 relative cursor-pointer">
+                <img className="absolute left-0 top-0" src={country4} alt="" />
+                <h4 className="float-right font-inter text-[24px] leading-[24px] font-semiBold">
+                  WON
+                </h4>
+                <div className="mt-14 ml-0">
+                  <h4 className="font-inter text-[32px] leading-[38px] mb-1 font-bold">
+                    4268.96
+                  </h4>
+
+                  <h4 className="flex gap-1 font-inter text-[16px] leading-[24px] font-bold text-[#555555]">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.8057 2.29219L18.3057 5.29217C18.5974 5.40883 18.8307 5.75883 18.8307 6.06716V8.83383C18.8307 9.29217 18.4557 9.66717 17.9974 9.66717H2.9974C2.53906 9.66717 2.16406 9.29217 2.16406 8.83383V6.06716C2.16406 5.75883 2.3974 5.40883 2.68907 5.29217L10.1891 2.29219C10.3557 2.22552 10.6391 2.22552 10.8057 2.29219Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.8307 18.8333H2.16406V16.3333C2.16406 15.875 2.53906 15.5 2.9974 15.5H17.9974C18.4557 15.5 18.8307 15.875 18.8307 16.3333V18.8333Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.83594 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M7.16406 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.8359 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.1641 15.4974V9.66406"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.33594 18.8359H19.6693"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 7.58594C11.1904 7.58594 11.75 7.02629 11.75 6.33594C11.75 5.64558 11.1904 5.08594 10.5 5.08594C9.80964 5.08594 9.25 5.64558 9.25 6.33594C9.25 7.02629 9.80964 7.58594 10.5 7.58594Z"
+                        stroke="#555555"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>{" "}
+                    ..5634
+                  </h4>
+                </div>
               </div>
             </div>
           </TabsContent>
@@ -216,14 +575,14 @@ const Home = () => {
         {/* Transactions */}
         <div>
           <div className="flex justify-between items-center mb-4">
-            <div className="text-lg font-semibold">Transactions</div>
-            <button className="text-blue-600">See All</button>
+            <div className="text-[24px] leading-[36px] font-bold font-poppins text-regular">Transactions</div>
+            <button className="text-primary-regular font-inter underline font-semiBold text-[16px]">See All</button>
           </div>
-          <ul>
+          <ul className="grid items-center gap-3">
             {Array.from({ length: 3 }).map((_, index) => (
               <li
                 key={index}
-                className="flex justify-between items-center py-2 border-b last:border-none"
+                className="flex justify-between items-center py-2 bg-surface-body px-4"
               >
                 <div>
                   <div className="font-medium">Old Bank Business Ltd</div>

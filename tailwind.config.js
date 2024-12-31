@@ -4,6 +4,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      // container: {
+      //   center: true, 
+      //   padding: "2rem", 
+      // },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
@@ -17,7 +21,7 @@ export default {
           regular: "#1C3B7D",
           dark: "#f6f6f6",
           darker: "#010E35",
-          lightest: "#E6EDF7",
+          lightest: "#E9ECF2",
           lighter: "#D2DEE5",
           light: "#B9C8D8",
           DEFAULT: "hsl(var(--primary))",

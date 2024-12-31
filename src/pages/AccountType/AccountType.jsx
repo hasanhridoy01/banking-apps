@@ -6,7 +6,7 @@ const AccountType = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="py-4 px-20 mx-auto w-full border-b border-regular flex items-center justify-between">
+      <div className="py-4 px-32 mx-auto w-full border-b border-regular flex items-center justify-between">
         <img src={logo} alt="logo" />
         <div className="flex gap-3">
           <button>

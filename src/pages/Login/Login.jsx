@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="py-4 px-20 mx-auto w-full border-b border-regular">
+      <div className="py-4 px-32 mx-auto w-full border-b border-regular">
         <img src={logo} alt="logo" />
       </div>
 
